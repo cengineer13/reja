@@ -4,7 +4,7 @@ const express = require('express');
 const http = require("http")
 const fs = require("fs")
 
-
+// Database dan user ma'lumotlarini olish
 let user;
 fs.readFile("database/user.json", "utf-8", (err, data) => {
     if(err) {
