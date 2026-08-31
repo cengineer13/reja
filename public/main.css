@@ -10,25 +10,25 @@
 .main_frame {
   position: relative;
   width: 1440px;
-  height: 1312px;
+  height: 1280;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   margin-top: 2px;
-  background-color: #f7f6b9;
+  background-color: #ededed;
 }
 .main_frame .left_frame{
     position: relative;
-    width: 305px;
-    height: 1315px;
-    background-color: white;
+    width: 300px;
+    height: 1250px;
+    background-color: rgb(249, 249, 249);
 }
 
 .main_frame .middle_frame {
     /* My Services */
     position: relative;
     width: 970px;
-    height: 1259px;
+    height: 1250px;
     margin-left: 30px;
     margin-right: 27px;
     display: flex;
@@ -37,32 +37,33 @@
 .main_frame .right_frame { 
     position: relative;
     width: 108px;
-    height:1315px;
+    height:1250px;
     background-color: rgb(248, 248, 248);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/* LEFT frame qismi boshlandi */
 .left_frame .left_profile {
     position:relative; 
     width: 228px;
-    margin-top: 20px;
-    margin-left: 37px;
+    margin-top: 10px;
+    margin-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .left_frame .left_profile .profile_image {
-    display: flex;
-    flex-direction: column;
     position: relative;
     width: 156.16px;
     height: 150.53px;
     margin-bottom:29.46px;
-    margin-top: 10.46px;
+    margin-top: 10px;
     border-radius: 50%;
+    margin-left: 12px;
 }
 .left_frame .left_profile .profil_name {
     position: relative;
@@ -80,6 +81,7 @@
     align-items: center;
     text-transform: capitalize;
     color: #2B2B2B;
+    margin-left: 35px;
 }
 .left_frame .left_profile .profil_profession {
     position: relative;
@@ -90,20 +92,20 @@
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
-    /* or 160% */
     text-transform: capitalize;
     font-feature-settings: 'calt' off, 'kern' off;
-    /* Paragraph Font */
     color: #767676;
+    margin-left: 35px;
 }
 .left_frame .left_profile .profil_socials {
     position: relative;
-    width: 85%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 19px;
+    margin-left: 35px;
 }
 .profil_socials .social_link_href {
     text-decoration: none;
@@ -117,29 +119,23 @@
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 1, 0.25)); */
     background-color: #ffb400;
 }
-/* .icon-1 {
-    position: relative;
-    width: 29.17%;
-    height: 27.08%;
-    margin-top:5.86px; 
-} */
 
 .left_frame .marginer {
     position: relative;
     width: 220px;
     height: 0px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    margin-left: 40px;
-    border: 1.5px solid #ffd000;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 45px;
+    border: 1.5px solid #4a4a4a;
+    opacity: 0.1;
 }
 .left_frame .left_info {
     position: relative;
     width: 220px;
-    margin-left: 44px;
+    margin-left: 35px;
     display: flex;
     flex-direction: column;
 }
@@ -159,13 +155,12 @@
 .left_frame .left_languages {
     position: relative;
     width: 220px;
-    /* height: 123px; */
     margin-left: 44px;
     display: flex;
     flex-direction: column;
     align-items: space-between;
 }
-.left_languages .lang_title {
+.left_title {
     position: relative;
     height: 20px;
     margin-top: 5px;
@@ -173,40 +168,257 @@
     font-family: sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
 }
-.left_languages .lang_row {
+.left_skill_with_percentage {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
-}
-.left_languages .lang_progress {
     width: 100%;
-    height: 4px;
-    border: 1px solid #ffb400;
+}
+.progress-bar {
+    width: 100%;
+    height: 6px;
+    border: 1px solid orange;
     border-radius: 10px;
     padding: 1px;
     box-sizing: border-box;
-    display: flex;
-    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.progress {
+    height: 100%;
+    background-color: #ffb400 !important;   
+    border-radius: 10px;
 }
 
 .left_frame .left_skills {
     position: relative;
     width: 221px;
-    height: 126px;
+    /* height: 126px; */
     margin-left: 44px;
-    background-color: rgb(243, 52, 52);
+
 }
 .left_frame .left_extra_skills {
     position: relative;
     width: 221px;
     height: 126px;
     margin-left: 44px;
-    background-color: rgb(243, 52, 52);
+}
+.left_frame .left_extra_skills .extra_skill_icon{
+    margin: 8px 8px 8px 0;
+}
+/* LEFT frame qismi tugadi */
+
+
+/* Middle Frame qismi boshlandi */
+.middle_frame{
+    position: relative;
+    width: 620px;
+    height: 1315px;
+    display: flex;
+    flex-direction: column;
+
+}
+.middle_frame .middle_top{
+    position: relative;
+    height: 400px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.middle_frame .middle_top .figure1{
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    left: 20px;
+    top: 15px;
+    object-fit: contain;
+    display: block;
+}
+.middle_frame .middle_top .figure2{
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    left: 100px;
+    bottom: 20px;
+    object-fit: contain;
+    display: block;
+}
+.middle_frame .middle_top .figure3{
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    top: 30px;
+    right: 100px;
+}
+.middle_frame .middle_top .figure4{
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    bottom: 15px;
+    right: 50px;
+}
+.middle_frame .middle_top .figure5{
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    bottom: 90px;
+    left: 380px;
+}
+.middle_frame .middle_top .figure6{
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    bottom: 50px;
+    right: 350px;
+}
+.middle_frame .middle_top .figure7{
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    top: 40px;
+    right: 400px;
 }
 
+.middle_frame .middle_top .middle_left{
+    width: 60%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex; 
+    flex-direction: column; 
+    padding: 40px 0 0 40px;
+    gap:25px;
+}
+.middle_left .middle_top_title{
+
+    font-style: normal; 
+    font-weight: 700; 
+    font-size: 48px; 
+    line-height: 123.6%; 
+    color: #2B2B2B;
+    margin: 0px;
+}
+.middle_left .middle_top_intro{
+    font-family: 'Inter', sans-serif; 
+    font-style: normal; 
+    font-size: 16px; 
+    width: 70%;
+    line-height: 24px; 
+    text-transform: capitalize; 
+    font-feature-settings: 'calt' off, 'kern' off; 
+    color: #767676; 
+    margin: 0;
+}
+.middle_left .middle_button button{
+    padding: 12px 28px;
+    background-color: #ffb400;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.middle_frame .middle_top .middle_right{
+    width: 40%;
+    /* overflow: hidden; */
+}
+.middle_top .middle_right img{
+    margin-top: 20px;
+    margin-left: 45px;
+    height: 95%;
+}
+
+.middle_frame .middle_midd{
+    
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+    gap:20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.middle_midd .middle_midd_title{
+    font-style: normal; 
+    font-weight: 500; 
+    font-size: 36px; 
+    line-height: 123.6%; 
+    color: #2B2B2B;
+    margin: 0px;
+}
+.middle_midd .middle_midd_intro{
+    font-style: normal; 
+    font-size: 16px; 
+    line-height: 24px; 
+    text-transform: capitalize; 
+    text-align: center;
+    font-feature-settings: 'calt' off, 'kern' off; 
+    color: #767676; 
+    margin: 0;
+    width: 47%;
+    height: 68px;
+    color: #767676;
+}
+
+.middle_footer{
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 5px;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+}
+.middle_footer .service_container{
+    height: 200px;
+    width: 30%;
+    background-color: rgb(253, 253, 253);
+    padding: 20px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    box-shadow: 10px 2px 10px rgba(0, 0, 0, 0.03);
+}
+.service_container .service_name{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 123.6%;
+    text-transform: capitalize;
+    color: #2B2B2B;
+}
+.service_container .service_details{
+    font-family: 'Inter', sans-serif; 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: capitalize;
+    font-feature-settings: 'calt' off, 'kern' off;
+    color: #767676;
+}
+
+.right_frame .contrast_button{
+    position: relative;
+    margin-top: 50px;
+}
+.right_frame .right_menu{
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 45%;
+}
 
 

@@ -86,6 +86,8 @@ async function run() {
     console.log(javob);
     javob = await maslahatBering2(52);
     console.log(javob);
+    javob = await maslahatBering2(65);
+    console.log(javob);
 };
 run()
 

@@ -13,9 +13,10 @@
 <body>
     <div class="frame">
         <div class="main_frame">
+            <!-- Left frame beginning -->
             <div class="left_frame">
                 <div class="left_profile">
-                    <div class="profile_image"> <img src="/author/images/my_image.jpg" alt="Profile Image" class="profile_image"></div>
+                    <div class="profile_image"> <img src="/author/images/Profile.png" alt="Profile Image" class="profile_image"></div>
                     <div class="profil_name"><%=user.name%></div>
                     <div class="profil_profession"><%=user.profession%></div>
                     <div class="profil_socials">
@@ -24,9 +25,9 @@
                         <a class="social_link_href" href="#"><div class="icon"><img src="/author/icons/social/Linkeding.svg" class="icon-1" alt="LinkedIn"/></div></a>
                         <a class="social_link_href" href="#"><div class="icon"><img src="/author/icons/social/Twitter.svg" class="icon-1" alt="Twitter"/></div></a>
                         <a class="social_link_href" href="#"><div class="icon"><img src="/author/icons/social/Youtube.svg" class="icon-1" alt="Youtube"/></div></a>
-                        <a class="social_link_href" href="#"><div class="icon"><img src="/author/icons/social/Dribbble.svg" class="icon-1" alt="Dribbble"/></div></a>
+                        <!-- <a class="social_link_href" href="#"><div class="icon"><img src="/author/icons/social/Dribbble.svg" class="icon-1" alt="Dribbble"/></div></a> -->
                     </div>
-
+                </div>
                 <div class="marginer"></div>
 
                 <div class="left_info">
@@ -37,39 +38,174 @@
                 </div>
                 <div class="marginer"></div>
                 <div class="left_languages">
-                    <div class="lang_title">Languages</div>
-                    <div class="lang_row">
+                    <div class="left_title">Languages</div>
+                    <div class="left_skill_with_percentage">
                         <div class="lang">Uzbek</div>
                         <div class="lang_procent">100%</div>
                     </div>
-                    <div class="lang_progress" style="width: 100%;">Progress</div>
-                    
-                    <div class="lang_row">
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 100%"></div>
+                    </div>
+                    <div class="left_skill_with_percentage">
                         <div class="lang">English</div>
                         <div class="lang_procent">70%</div>
                     </div>
-                     <div class="lang_progress" style="width: 100%;">Progress</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%"></div>
+                    </div>
                     
-                    <div class="lang_row">
+                    <div class="left_skill_with_percentage">
                         <div class="lang">Korean</div>
                         <div class="lang_procent">60%</div>
                     </div>
-                     <div class="lang_progress" style="width: 80%;">Progress</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 60%;"></div>
+                    </div>
                 </div>
                 <div class="marginer"></div>
-                <div class="left_skills">skills</div>
-                <div class="marginer">margier</div>
-                <div class="left_extra_skills">extra skills</div>
+                <!--Skills-->
+                <div class="left_skills">
+                    <div class="left_title">Skills</div>
+
+                    <div class="left_skill_with_percentage">
+                        <div class="skill">HTML</div>
+                        <div class="skill_procent">90%</div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%"></div>
+                    </div>
+
+                    <div class="left_skill_with_percentage">
+                        <div class="skill">CSS</div>
+                        <div class="skill_procent">85%</div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%"></div>
+                    </div>
+
+                    <div class="left_skill_with_percentage">
+                        <div class="skill">Javascript</div>
+                        <div class="skill_procent">80%</div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%"></div>
+                    </div>
+
+                    <div class="left_skill_with_percentage">
+                        <div class="skill">NodeJS</div>
+                        <div class="skill_procent">75%</div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%"></div>
+                    </div>
+
+                    <div class="left_skill_with_percentage">
+                        <div class="skill">Python</div>
+                        <div class="skill_procent">85%</div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%"></div>
+                    </div>
+                </div>
+
+                <div class="marginer"></div>
+                
+                <!--Extra Skills-->
+                <div class="left_extra_skills">
+                    <div class="left_title">Extra Skills</div>
+                    <div class="left_skill_icon_with_name">
+                        <img class="extra_skill_icon" src="/author/icons/menu_icons/extra_skill.png">
+                        <span class="extra_skill_name">Bootstrap, Materialize</span>
+                    </div>
+                    <div class="left_skill_icon_with_name">
+                        <img class="extra_skill_icon" src="/author/icons/menu_icons/extra_skill.png">
+                        <span class="extra_skill_name">Stylus, Sass, Less</span>
+                    </div>
+                    <div class="left_skill_icon_with_name">
+                        <img class="extra_skill_icon" src="/author/icons/menu_icons/extra_skill.png">
+                        <span class="extra_skill_name">Gulp, Webpack, Grunt</span>
+                    </div>
+                    <div class="left_skill_icon_with_name">
+                        <img class="extra_skill_icon" src="/author/icons/menu_icons/extra_skill.png">
+                        <span class="extra_skill_name">GIT Knowledge</span>
+                    </div>
+                </div>
+           
+            </div> 
+            <!-- Left Frame End -->
             
-            </div> <!-- Left Frame End -->
-            
-            
-            
-            <!-- Middle Frame -->
-            <div class="middle_frame"></div>
+            <!-- Middle Frame beginning -->
+            <div class="middle_frame">
+                <div class="middle_top">
+                    <img class="figure1" src="/author/icons/menu_icons/Ellipse 15.svg">
+                    <img class="figure2" src="/author/icons/menu_icons/Ellipse 12.svg">
+                    <img class="figure3" src="/author/icons/menu_icons/Rectangle 51.svg">
+                    <img class="figure4" src="/author/icons/menu_icons/Polygon 1.svg">
+                    <img class="figure5" src="/author/icons/menu_icons/Rectangle 52.svg">
+                    <img class="figure6" src="/author/icons/menu_icons/Ellipse 15.svg">
+                    <img class="figure7" src="/author/icons/menu_icons/Ellipse 12.svg">
+                    <div class="middle_left">
+                        <div class="middle_top_title">Doctor neurologists in OHSU Hospital</div>
+                        <div class="middle_top_intro"><%=user.about_me%></div>
+                        <div class="middle_button"><button>HIRE ME  <img style="margin: 0px 5px 2px 5px;" src="/author/icons/btn_icons/Vector.png"></button></div>
+                    </div>
+                    <div class="middle_right">
+                        <img src="/author/images/top_image.png">
+                    </div>
+                </div>
+                <div class="middle_midd">
+                    <div class="middle_midd_title">My services</div>
+                    <div class="middle_midd_intro"><%=user.service_desc%></div>
+                </div>
+
+                <div class="middle_footer">
+                    <div class="service_container">
+                    <div class="service_icon"> <img src="/author/icons/menu_icons/coding.svg"></div>
+                        <div class="service_name">Web Development</div>
+                        <div class="service_details">Blog, E-Commerce</div>
+                    </div>
+                    <div class="service_container">
+                        <div class="service_icon"><img src="/author/icons/menu_icons/illustration.svg"></div>
+                        <div class="service_name">UI/UX design</div>
+                        <div class="service_details">Mobile app, website design</div>
+                    </div>                    
+                    <div class="service_container">
+                        <div class="service_icon"> <img src="/author/icons/menu_icons/Microphone.svg"></div>
+                        <div class="service_name">Sound Design</div>
+                        <div class="service_details">Voice Over, Beat Making</div>
+                    </div>
+                    <div class="service_container">
+                        <div class="service_icon"><img src="/author/icons/menu_icons/game-development.svg"></div>
+                        <div class="service_name">Game Design</div>
+                        <div class="service_details">Character Design, Props & Objects</div>
+                    </div>
+
+                    <div class="service_container">
+                        <div class="service_icon"><img src="/author/icons/menu_icons/Photographer.svg"></div>
+                        <div class="service_name">Photography</div>
+                        <div class="service_details">portrait, product photography</div>
+                    </div>
+                    <div class="service_container">
+                        <div class="service_name">advertising</div>
+                        <div class="service_details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi. </div>
+                        <div style="color: #ffb400; font-size:14px; font-weight:bold; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">ORDER NOW ></div>
+                    </div>                                        
+                </div>
+            </div>
+            <!-- Middle Frame End -->
 
             <!-- Right Frame -->
-            <div class="right_frame"></div>
+            <div class="right_frame">
+                <div class="contrast_button"> <img src="/author/icons/btn_icons/Contrast.png"></div>
+                <div class="right_menu">
+                    <div class="right_menu_button"><img src="/author/icons/btn_icons/Home.png"></div>
+                    <div class="right_menu_button"><img src="/author/icons/btn_icons/Service.png"></div>
+                    <div class="right_menu_button"><img src="/author/icons/btn_icons/Cv.png"></div>
+                    <div class="right_menu_button"><img src="/author/icons/btn_icons/Portfolio.png"></div>
+                    <div class="right_menu_button"><img src="/author/icons/btn_icons/Blog.png"></div>
+                    <div class="right_menu_button"><img src="/author/icons/btn_icons/Contact.png"></div>
+                </div>
+            </div>
         </div>
     </div>
 
