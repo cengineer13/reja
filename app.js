@@ -18,6 +18,7 @@ app = express();
 // MongoDB chaqirish
 // db MongoDb instance classdan olingan obyekt instanta
 const db = require('./server').db("Reja"); 
+const mongodb = require("mongodb");
 
 
 // 1 Input code
@@ -41,6 +42,15 @@ app.post('/create-item', (req, res) => {
         res.json(data.ops[0]);
 });
 });
+
+app.post("/delete-item", (req, res) => {
+    const id = req.body.id;
+    db.collection("plans").deleteOne({_id: new mongodb.ObjectId(id)}, 
+    function(err, data) {
+        res.json({ state: "success" })
+    })
+});
+
 
 app.get("/author", (req, res) => {
     res.render("author", {user: user})
