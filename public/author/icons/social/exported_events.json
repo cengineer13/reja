@@ -1,0 +1,15 @@
+[
+  {
+    "service": "web",
+    "source time": "2026-09-03 11:39:43Z",
+    "uuid": "6999b098-087d-4077-bda5-ac97e32ece2c",
+    "vulnerability": "CVE-2026-54433",
+    "protocol": "https",
+    "matched event value": "amail.ukiu.uz",
+    "asset match": "domain name",
+    "type": "vulnerable service",
+    "ip": "95.46.211.170",
+    "issue id": "dceb8296493c1b6822762c7938854d91a5ea87e1",
+    "port": "443"
+  }
+]

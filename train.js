@@ -133,3 +133,17 @@ function countDigits(a) {
 const a = 'ad2a54y79wet0sfgb9'
 digits = countDigits("ad2a54y79wet0sfgb9")
 console.log(`${a} string tarkibida ${digits} ta raqam mavjud`)
+
+
+function raqamlarniSanash(string) {
+    let sanoq = 0;
+    for(let char of string) {
+        // isNaN bu berilgan qiymatni songa convert qilsa boladimi yoqmi tekshirib beradi agar convert qilib bolsa false aks holda true qiymat qaytaradi
+        if(!isNaN(char)) {
+            sanoq++;
+        }
+    }
+    console.log(sanoq);
+}
+
+raqamlarniSanash("asfafaf-2-2,1-2");
