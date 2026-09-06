@@ -40,11 +40,11 @@
             <li class="list-group-item list-group-item-info d-flex align-items-center justify-content-between">
                 <span class="item-text"><%= item.reja %></span>
                 <div>
-                <button data-id="<%= item.id%>" 
+                <button data-id="<%=item.id%>" 
                     class="edit-me btn btn-secondary btn-sm mr-1">
                     Ozgartirish
                 </button>
-                <button data-id="<%= item.id%>" 
+                <button data-id="<%=item.id%>" 
                     class="delete-me btn btn-danger btn-sm">Ochirish</button>
                 </div>
             </li>
@@ -57,9 +57,7 @@
     </div>
 
 
-    <script src="./browser.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-
-
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/browser.js"></script>
 </body>
 </html>
