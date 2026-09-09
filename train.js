@@ -101,55 +101,55 @@
 
 
 // /////////////////-------------------------A-TASK -------------------------/////////////////
-console.log("================= A-TASK =================")
-// /* Shunday 2 parametrli function tuzing, hamda birinchi parametrdagi letterni ikkinchi parametrdagi sozdan qatnashga sonini return qilishi kerak boladi.
-// MASALAN countLetter("e", "engineer") 3ni return qiladi. */
-const result = (letter, word) => {
-    let count = 0;
-    for (let i = 0; i <= word.length; i++) {
-        if (word[i] === letter) count ++;
-    }
-    console.log(`${word} so'zida ${letter} ${count} marta qatnashgan!!!`);
-    return count;
-};
-console.log(result("e", "engineer"));
+// console.log("================= A-TASK =================")
+// // /* Shunday 2 parametrli function tuzing, hamda birinchi parametrdagi letterni ikkinchi parametrdagi sozdan qatnashga sonini return qilishi kerak boladi.
+// // MASALAN countLetter("e", "engineer") 3ni return qiladi. */
+// const result = (letter, word) => {
+//     let count = 0;
+//     for (let i = 0; i <= word.length; i++) {
+//         if (word[i] === letter) count ++;
+//     }
+//     console.log(`${word} so'zida ${letter} ${count} marta qatnashgan!!!`);
+//     return count;
+// };
+// console.log(result("e", "engineer"));
 
 
 // /////////////////-------------------------A-TASK -------------------------/////////////////
-console.log("================= B-TASK =================")
+// console.log("================= B-TASK =================")
  /* Shunday, function tuzingki, bu function yagona parametrga ega bo'lib
 string tarkibidagi sonlar miqdorini qaytarsin Masalan: countDigits("ad2a54y79wet0sfgb9")
 Yuqoridagi string tarkibida 7 dona raqam qatnashganligi uchun, natija 7 qaytadi */
 
-function countDigits(a) {
-    let count = 0;
-    for (const val of a) {
-        if (val >= 0 && val <=9) {
-            count++;
-        }
-    }
-    return count;
-}
-const a = 'ad2a54y79wet0sfgb9'
-digits = countDigits("ad2a54y79wet0sfgb9")
-console.log(`${a} string tarkibida ${digits} ta raqam mavjud`)
+// function countDigits(a) {
+//     let count = 0;
+//     for (const val of a) {
+//         if (val >= 0 && val <=9) {
+//             count++;
+//         }
+//     }
+//     return count;
+// }
+// const a = 'ad2a54y79wet0sfgb9'
+// digits = countDigits("ad2a54y79wet0sfgb9")
+// console.log(`${a} string tarkibida ${digits} ta raqam mavjud`)
 
 
-function raqamlarniSanash(string) {
-    let sanoq = 0;
-    for(let char of string) {
-        // isNaN bu berilgan qiymatni songa convert qilsa boladimi yoqmi tekshirib beradi agar convert qilib bolsa false aks holda true qiymat qaytaradi
-        if(!isNaN(char)) {
-            sanoq++;
-        }
-    }
-    console.log(sanoq);
-}
+// function raqamlarniSanash(string) {
+//     let sanoq = 0;
+//     for(let char of string) {
+//         // isNaN bu berilgan qiymatni songa convert qilsa boladimi yoqmi tekshirib beradi agar convert qilib bolsa false aks holda true qiymat qaytaradi
+//         if(!isNaN(char)) {
+//             sanoq++;
+//         }
+//     }
+//     console.log(sanoq);
+// }
 
-raqamlarniSanash("asfafaf-2-2,1-2");
+// raqamlarniSanash("asfafaf-2-2,1-2");
 
 
-console.log("================= C-TASK =================")
+// console.log("================= C-TASK =================")
  /* TASK-C
 
 Shop nomli class tuzing, va bu class 3 xill parametr qabul qilsin.
@@ -170,61 +170,76 @@ natija qaytishi kerak: Hozir 20: 40'da 4'ta non, 5'ta lag'mon va 2'ta cola mavju
 shop.sotish("non", 3); & shop.qabul("cola", 4); & shop.qoldiq();
 Natija qaytishi kerak: Hozir 20:50da 1ta non, 5ta lag'mon va 6ta cola mavjud! */
 
-const moment = require("moment");
+// const moment = require("moment");
 
-class Shop {
-    constructor(non, lagmon, cola) {
-        this.non = non;
-        this.lagmon = lagmon;
-        this.cola = cola;
-    }
+// class Shop {
+//     constructor(non, lagmon, cola) {
+//         this.non = non;
+//         this.lagmon = lagmon;
+//         this.cola = cola;
+//     }
 
-    show_remains() {
-        let vaqt = moment().format("HH:mm");
+//     show_remains() {
+//         let vaqt = moment().format("HH:mm");
 
-        console.log(
-            `Hozirgi ${vaqt} da Non: ${this.non} ta, Lagmon: ${this.lagmon} kg, Cola: ${this.cola} ta`
-        );
-    }
+//         console.log(
+//             `Hozirgi ${vaqt} da Non: ${this.non} ta, Lagmon: ${this.lagmon} kg, Cola: ${this.cola} ta`
+//         );
+//     }
 
-    sell(product, soni) {
-        if (product === "non") {
-            this.non -= soni;
-        }
+//     sell(product, soni) {
+//         if (product === "non") {
+//             this.non -= soni;
+//         }
 
-        if (product === "lagmon") {
-            this.lagmon -= soni;
-        }
+//         if (product === "lagmon") {
+//             this.lagmon -= soni;
+//         }
 
-        if (product === "cola") {
-            this.cola -= soni;
-        }
+//         if (product === "cola") {
+//             this.cola -= soni;
+//         }
 
-        console.log(`${product} - ${soni} ta sotildi`);
-    }
+//         console.log(`${product} - ${soni} ta sotildi`);
+//     }
 
-    accept(product, soni) {
-        if (product === "non") {
-            this.non += soni;
-        }
+//     accept(product, soni) {
+//         if (product === "non") {
+//             this.non += soni;
+//         }
 
-        if (product === "lagmon") {
-            this.lagmon += soni;
-        }
+//         if (product === "lagmon") {
+//             this.lagmon += soni;
+//         }
 
-        if (product === "cola") {
-            this.cola += soni;
-        }
+//         if (product === "cola") {
+//             this.cola += soni;
+//         }
 
-        console.log(`${product} - ${soni} ta qabul qilindi`);
-    }
+//         console.log(`${product} - ${soni} ta qabul qilindi`);
+//     }
+// }
+
+// const shop = new Shop(12, 15, 8);
+
+// shop.show_remains();
+
+// shop.sell("non", 6);
+// shop.accept("cola", 7);
+
+// shop.show_remains();
+
+
+console.log("================= D-TASK =================")
+/*Ikkita parametra ega function tuzing, va functioning berilgan birinchi va ikkinchi parametr qiymatlari o'zaro to'liq mos kelsa true qiymat qaytarsin.
+Masalan: checkContent("mitgroup", "gmtiprou") return true */
+function checkContent(word1, word2) {
+    console.log(`Tekshiralayotgan so'zlar: 1-${word1} 2-${word2}`)
+    const array1 = word1.split("").sort().join();
+    const array2 = word2.split("").sort().join();
+
+    return array1 === array2
 }
+const result2 = checkContent("mitgroup", "gmtiprou");
+console.log(result2);
 
-const shop = new Shop(12, 15, 8);
-
-shop.show_remains();
-
-shop.sell("non", 6);
-shop.accept("cola", 7);
-
-shop.show_remains();

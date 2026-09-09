@@ -15,6 +15,7 @@ function itemTemplate(item) {
             </li>`;
 }
 
+// add element to list
 let createField = document.getElementById("create-field");
 
 document.getElementById("create-form")
@@ -36,7 +37,7 @@ axios
 //delete by button
 document.addEventListener("click", function(e) {
 
-    console.log(e.target);
+    // console.log(e.target);
     if(e.target.classList.contains("delete-me")) {
         if(confirm("Aniq o'chirmoqchimisiz?")) {
             axios.post("/delete-item", {id: e.target.getAttribute("data-id")})
@@ -51,6 +52,30 @@ document.addEventListener("click", function(e) {
     }
     // edit by button
     if(e.target.classList.contains("edit-me")) {
-        alert("siz edit tugmasini bosdingiz");
-    }
-});
+        let userInput = prompt("O'zgartirish kiriting", e.target.parentElement.parentElement.querySelector(".item-text").innerHTML);
+        if(userInput) {
+            axios
+                .post("/edit-item", {
+                    id: e.target.getAttribute("data-id"),
+                    new_input:userInput})
+                .then(response => {
+                    console.log(response.data);
+                    e.target.parentElement.parentElement
+                    .querySelector(".item-text").innerHTML = userInput;
+                })
+                .catch(err => {
+                    console.log("Iltimos qaytadan harakat qiling!")
+
+                })
+            }
+            console.log(userInput);
+
+        }
+    });
+
+document.getElementById("clean-all").addEventListener("click", function() {
+    axios.post("/delete-all", {delete_all:true}).then(response => {
+        alert(response.data.state);
+        document.location.reload()
+    })
+})
