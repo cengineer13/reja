@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS Prompt Example</title>
+</head>
+<body>
+    <button onclick="showPrompt()">Click to Enter Name</button>
+
+    <script>
+        function showPrompt() {
+            // Opens the browser's built-in prompt window
+            let userName = prompt("Please enter your name:", "Harry Potter");
+            
+            if (userName !== null && userName !== "") {
+                alert("Hello, " + userName + "!");
+            } else {
+                alert("You cancelled the prompt.");
+            }
+        }
+    </script>
+</body>
+</html>

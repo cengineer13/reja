@@ -34,12 +34,14 @@ axios
 });
 });
 
-//delete by button
+//delete and edit by button
 document.addEventListener("click", function(e) {
+
 
     // console.log(e.target);
     if(e.target.classList.contains("delete-me")) {
         if(confirm("Aniq o'chirmoqchimisiz?")) {
+            console.log("You clicked on:", e.target); 
             axios.post("/delete-item", {id: e.target.getAttribute("data-id")})
             .then((response) => {
                 console.log(response.data);
@@ -50,16 +52,16 @@ document.addEventListener("click", function(e) {
             });
         }
     }
-    // edit by button
+    // edit by button 
     if(e.target.classList.contains("edit-me")) {
         let userInput = prompt("O'zgartirish kiriting", e.target.parentElement.parentElement.querySelector(".item-text").innerHTML);
         if(userInput) {
             axios
-                .post("/edit-item", {
-                    id: e.target.getAttribute("data-id"),
+                .post("/edit-item", 
+                    {id: e.target.getAttribute("data-id"),
                     new_input:userInput})
                 .then(response => {
-                    console.log(response.data);
+                    // console.log(response.data);
                     e.target.parentElement.parentElement
                     .querySelector(".item-text").innerHTML = userInput;
                 })
@@ -68,9 +70,11 @@ document.addEventListener("click", function(e) {
 
                 })
             }
-            console.log(userInput);
+        else {
+            alert("Hich narsa kiritmadingiz!")}
 
         }
+        console.log(userInput);
     });
 
 document.getElementById("clean-all").addEventListener("click", function() {
