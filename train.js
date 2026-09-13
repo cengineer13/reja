@@ -117,7 +117,7 @@
 
 // /////////////////-------------------------A-TASK -------------------------/////////////////
 // console.log("================= B-TASK =================")
- /* Shunday, function tuzingki, bu function yagona parametrga ega bo'lib
+/* Shunday, function tuzingki, bu function yagona parametrga ega bo'lib
 string tarkibidagi sonlar miqdorini qaytarsin Masalan: countDigits("ad2a54y79wet0sfgb9")
 Yuqoridagi string tarkibida 7 dona raqam qatnashganligi uchun, natija 7 qaytadi */
 
@@ -150,7 +150,7 @@ Yuqoridagi string tarkibida 7 dona raqam qatnashganligi uchun, natija 7 qaytadi 
 
 
 // console.log("================= C-TASK =================")
- /* TASK-C
+/* TASK-C
 
 Shop nomli class tuzing, va bu class 3 xill parametr qabul qilsin.
 Hamda classning quyidagdek 3'ta metodi bo'lsin:
@@ -243,3 +243,26 @@ function checkContent(word1, word2) {
 const result2 = checkContent("mitgroup", "gmtiprou");
 console.log(result2);
 
+console.log("================= E-TASK =================")
+/* Shunday function tuzing, u bitta string argumentini qabul qilib, qabul qilingan stringni teskari ko'rinishda return qilsin.
+Masalan: getReverse("hello") return "olleh" */
+
+// function getReverse(word) {
+//     const array = word.split("").join("").reverse()
+//     console.log(array)
+// }
+
+// getReverse("Hello")
+
+
+// console.log("================= F-TASK =================")
+// /* Yagona string argumentga ega findDoublers nomli function tuzing. Agar stringda bittadan ortiq bir xil harflar ishtirok
+// etgan bo'lsa true yokida false natija qaytarsin. Masalan: findDoublers("hello") return true */
+
+// function findDoublers(word) {
+//     const text = word.toLowerCase();
+//     console.log(text);
+//     for (let i = 0; i < text.length; i++) {
+//         natija = findDoublers('HELLO');
+//         console.log(natija)
+//     }
