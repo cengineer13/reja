@@ -247,22 +247,29 @@ console.log("================= E-TASK =================")
 /* Shunday function tuzing, u bitta string argumentini qabul qilib, qabul qilingan stringni teskari ko'rinishda return qilsin.
 Masalan: getReverse("hello") return "olleh" */
 
-// function getReverse(word) {
-//     const array = word.split("").join("").reverse()
-//     console.log(array)
-// }
+function getReverse(word) {
+    return word.split("").reverse().join("");
 
-// getReverse("Hello")
+}
+const word = "Hello"
+console.log(`Result: ${word} ==> ${getReverse(word)}`);
 
 
-// console.log("================= F-TASK =================")
-// /* Yagona string argumentga ega findDoublers nomli function tuzing. Agar stringda bittadan ortiq bir xil harflar ishtirok
-// etgan bo'lsa true yokida false natija qaytarsin. Masalan: findDoublers("hello") return true */
+console.log("================= F-TASK =================")
+/* Yagona string argumentga ega findDoublers nomli function tuzing. Agar stringda bittadan ortiq bir xil harflar ishtirok
+etgan bo'lsa true yokida false natija qaytarsin. Masalan: findDoublers("hello") return true */
 
-// function findDoublers(word) {
-//     const text = word.toLowerCase();
-//     console.log(text);
-//     for (let i = 0; i < text.length; i++) {
-//         natija = findDoublers('HELLO');
-//         console.log(natija)
-//     }
+function findDoublers(word) {
+    let text = "";
+    for (let i = 0; i < word.length; i++) {
+        let currLetter = word[i].toLowerCase();
+
+        if (text.includes(currLetter)) return true;
+
+        text += currLetter;
+    }
+    return false;
+}
+const word2 = "Heloh"
+result3 = findDoublers(word2)
+console.log(`"${word2}" so'zida qatnashgan harfning bir necha marotaba qaytarilganlik natijasi: ${result3}`)
